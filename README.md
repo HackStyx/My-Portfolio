@@ -2,6 +2,15 @@
 
 Welcome to my personal portfolio! 🚀 Explore my journey, projects, and get in touch.
 
+
+
+**Visit My Portfolio:** </br>
+[![Visit Portfolio](https://img.shields.io/badge/Visit%20Portfolio-blue?style=for-the-badge&logo=github&logoColor=white)](https://portfolio-princekumargupta.netlify.app/)
+
+Don't forget to star ⭐️ my GitHub repositories if you found them interesting!
+
+[![GitHub stars](https://img.shields.io/github/stars/HackStyx/My-Portfolio?style=social)](https://github.com/HackStyx/My-Portfolio)
+
 ## Table of Contents
 
 - [About Me](#about-me)
