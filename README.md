@@ -6,15 +6,12 @@ Welcome to my personal portfolio! 🚀 Explore my journey, projects, and get in 
 
 - [About Me](#about-me)
 - [Statistics](#statistics)
-- [Tech Stacks & Skills](#tech-stacks--skills)
-- [Education](#education)
 - [Projects](#projects)
 - [Contact](#contact)
-- [Footer](#footer)
 
 ## About Me
 
-I am a second-year Computer Science and Engineering student at Bangalore Institute of Technology. Driven by a passion for programming, my goal is to excel in Software Engineering by gaining extensive knowledge, practical experience, and contributing to innovative projects in the industry.
+Heyy I'm Prince. I am a second-year Computer Science and Engineering student at Bangalore Institute of Technology. Driven by a passion for programming, my goal is to excel in Software Engineering by gaining extensive knowledge, practical experience, and contributing to innovative projects in the industry.
 
 ### Interests & Hobbies
 
@@ -42,27 +39,17 @@ Explore my project portfolio, featuring:
 3. **[DataFlow-File-Manager](https://github.com/HackStyx/DataFlow-File-Manager)**
    - File manager for efficient data management.
 
-4. **FileWalker - Selective Copy Utility**
-   - [Source Code](https://github.com/HackStyx/FileWalker-Selective-Copy-Utility)
-
+4. **[FileWalker - Selective Copy Utility](https://github.com/HackStyx/FileWalker-Selective-Copy-Utility)**
+   - A selective copy utility for Efficient file copy
 5. **New Projects (Coming Soon)**
    - Stay tuned for exciting new projects!
 
 ## Contact
-
-Feel free to reach out! Here's how you can contact me:
-
-- **Location:** Bangalore, India
-- **Email:** prince*****@gmail.com
-- **Phone:** +91955XXXXXXX
-
-## Footer
-
 Thank you for visiting my portfolio! 💞 Connect with me on:
 
 - [LinkedIn](https://linkedin.com/in/princekumargupta)
 - [GitHub](https://github.com/HackStyx)
-- Email: letmeloveyou@telegmail.com
+- [Email](mailto:letmeloveyou@telegmail.com)
 - [Telegram](https://t.me/prince_kumar_gupta)
 - [Discord](https://discord.com/users/1014847160329699348)
 - [Instagram](https://instagram.com/heyy_im.prince)
