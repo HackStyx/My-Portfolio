@@ -348,7 +348,17 @@ h6 {
     line-height: 24px;
   }
 }
+body.dark-theme #hero {
+  background: url("../img/hero-dark-bg.jpg") top right no-repeat;
+}
 
+body.dark-theme {
+  background-color: #000000; /* Set your preferred dark background color */
+  color: #ffffff; /* Set your preferred text color for dark mode */
+}
+body.dark-theme #hero:before {
+  background: none; /* Remove the light mode overlay */
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -571,6 +581,28 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
+.resume.dark-theme .resume .resume-item h5 {
+  background: none; /* Remove the background color */
+  color: #ffffff; /* Set your preferred text color for dark mode */
+  display: inline; /* Remove the display property */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume.dark-theme .resume .resume-item h5::before {
+  background: #000000; /* Set the background color to match the dark mode background */
+  border: none; /* Remove the border */
+}
+
+/* Dark Mode Styles */
+
+
+
+body.dark-theme .resume .resume-item h5 {
+  background-color: transparent;
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1206,4 +1238,17 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+body.dark-theme #footer {
+  background-color: #000000; /* AMOLED black */
+  color: #ffffff; /* Set your preferred text color for dark mode */
+}
+
+body.dark-theme #footer h4,
+body.dark-theme #footer p {
+  color: #ffffff; /* Set your preferred color for text in dark mode */
+}
+
+body.dark-theme #footer a {
+  color: #ffcc00; /* Set your preferred color for links in dark mode */
 }
