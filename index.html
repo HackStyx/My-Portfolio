@@ -23,6 +23,136 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    body.dark-theme {
+      background-color: #000000; /* Set your preferred dark background color */
+      color: #ffffff; /* Set your preferred text color for dark mode */
+    }
+
+    #darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40; /* Set your preferred toggle button color */
+  color: #ffffff; /* Set your preferred toggle button text color */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+    /* Light mode styles */
+
+    #contact {
+  background-color: #fff; /* Set your preferred background color for light mode */
+  color: #000; /* Text color for light mode */
+  padding: 40px; /* Add padding for better spacing */
+}
+
+#contact .section-title {
+  margin-bottom: 30px;
+}
+
+#contact .info {
+  text-align: left; /* Align info to the left */
+  background: linear-gradient(45deg, #536dfe, #7e57c2); /* Soft blue-purple gradient */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding for better spacing */
+  margin-bottom: 20px; /* Adjust margin for better spacing */
+  color: #ffffff; /* Set your preferred text color for the info box */
+}
+
+#contact .info h4,
+#contact .info p {
+  color: #ffffff; /* Set your preferred color for text in the info box */
+}
+
+
+#contact .info i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #6b47ff); /* Set your preferred gradient colors */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Adjust margin for better spacing */
+}
+
+body.dark-theme #contactForm input,
+body.dark-theme #contactForm textarea {
+  border: 1px solid #ffffff; /* Set your preferred border color for form elements in dark mode */
+  background-color: #000000; /* AMOLED black */
+  color: #ffffff; /* Set your preferred text color for form elements in dark mode */
+}
+
+body.dark-theme #contactForm input::placeholder,
+body.dark-theme #contactForm textarea::placeholder {
+  color: #999999; /* Set your preferred placeholder text color in dark mode */
+}
+
+body.dark-theme #contactForm button {
+  background-color: #ffcc00; /* Set your preferred button color for dark mode */
+  color: #000000; /* Set your preferred button text color for dark mode */
+}
+
+body.dark-theme #contactForm button:hover {
+  background-color: #ff9900; /* Change button color on hover in dark mode */
+}
+
+
+/* Dark mode styles */
+
+body.dark-theme #contact {
+  background-color: #000000; /* AMOLED black */
+  color: #ffffff; /* Set your preferred text color for dark mode */
+}
+
+body.dark-theme #contact .info {
+  background-color: #000000; /* AMOLED black */
+}
+
+body.dark-theme #contact .info h4,
+body.dark-theme #contact .info p {
+  color: #ffffff; /* Set your preferred color for text in dark mode */
+}
+
+body.dark-theme #contact .info i {
+  color: #ffcc00; /* Set your preferred color for icons in dark mode */
+}
+
+body.dark-theme #contactForm {
+  background-color: #000000; /* AMOLED black */
+}
+
+body.dark-theme #contactForm input,
+body.dark-theme #contactForm textarea,
+body.dark-theme #contactForm button {
+  border: 1px solid #ffffff; /* Set your preferred border color in dark mode */
+  background-color: #000000; /* AMOLED black */
+  color: #ffffff; /* Set your preferred text color for form elements in dark mode */
+}
+
+body.dark-theme #contactForm button:hover {
+  background-color: #20fa40; /* Change button color on hover in dark mode */
+}
+
+
+
+
+      </style>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -41,6 +171,9 @@
 </head>
 
 <body>
+  <div id="darkModeToggle"><i class="fas fa-sun"></i></div>
+
+  
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -379,6 +512,21 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+  
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+  
+      if (document.body.classList.contains('dark-theme')) {
+        toggle.innerHTML = '<i class="fas fa-sun"></i>'; // Replace with your sun icon
+      } else {
+        toggle.innerHTML = '<i class="fas fa-moon"></i>'; // Replace with your moon icon
+      }
+    });
+  </script>
+  
+    
    <!--<script src="assets/vendor/php-email-form/validate.js"></script> -->
  <!--  <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
