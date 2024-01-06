@@ -10,7 +10,7 @@ Welcome to my personal portfolio! 🚀 Explore my journey, projects, and get in 
 
 NEW: ADDED DARK MODE, FIXED SOME BUGS AND IMPROVED USER EXPERIENCE 
 
-Don't forget to star ⭐️ my GitHub repositories if you found them interesting!
+Don't forget to star ⭐️ my GitHub repositories if you found them interesting :)
 
 [![GitHub stars](https://img.shields.io/github/stars/HackStyx/My-Portfolio?style=social)](https://github.com/HackStyx/My-Portfolio)
 
