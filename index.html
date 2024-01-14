@@ -183,6 +183,95 @@ body.dark-theme #contactForm button:hover {
 }
 
 
+body.dark-theme {
+  cursor: url("blue2.png") 10 10, auto !important; 
+}
+
+body {
+  cursor: url("black2.png") 10 10, auto !important;
+}
+
+
+/* Buttons */
+button,
+.btn, 
+.button {
+  cursor: url("hover.png"), pointer; 
+}
+
+/* Toggle */
+#darkModeToggle {
+  cursor: url("hover.png"), pointer;
+}
+
+/* Social Icons */  
+.social-links a {
+  cursor: url("hover.png"), pointer;
+}
+
+/* Restore on hover */
+button:hover,
+#darkModeToggle:hover,
+.social-links a:hover {
+  cursor: url("hover.png"), auto;
+}
+
+.hire-me {
+  cursor: url("hover.png"), pointer;  
+}
+
+/* Restore on hover */
+button:hover, 
+.btn:hover,
+.button:hover {
+  cursor: url("hover.png"), auto; 
+}
+
+/* Restore Hire Me button */
+.hire-me:hover {
+  cursor: url("hover.png"), auto;
+}
+
+.portfolio-links a {
+  cursor: url("hover.png"), pointer; 
+}
+
+/* Restore on hover */ 
+.portfolio-links a:hover {
+  cursor: url("hover.png"), auto;
+}
+
+/* Contact Form Submit Button */
+#contactForm button[type="submit"] {
+  cursor: url("hover.png"), pointer;
+}
+
+#contactForm button[type="submit"]:hover {
+  cursor: url("hover.png"), auto; 
+}
+
+
+footer p img {
+  cursor: url("hover.png"), pointer;
+}
+
+/* Reset Footer Image on Hover */
+footer p img:hover {
+  cursor: url("hover.png"), auto;
+}
+
+/* Contact Form Inputs */
+#contactForm input, 
+#contactForm textarea {
+  cursor: url("text.png"), auto;
+}
+
+/* Reset Contact Form Inputs on Hover */  
+#contactForm input:hover,
+#contactForm textarea:hover {
+  cursor: url("text.png"), auto;
+}
+
       </style>
 
   <!-- Template Main CSS File -->
@@ -606,6 +695,36 @@ body.dark-theme #contactForm button:hover {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function () {
+  const body = document.body;
+
+  function setCursor() {
+      const darkMode = localStorage.getItem('userMode') === 'dark-mode';
+
+      if (darkMode) {
+          body.style.cursor = 'url("blue2.png") 10 10, auto';
+      } else {
+          body.style.cursor = 'url("black2.png") 10 10, auto';
+      }
+  }
+  window.addEventListener('resize', setCursor);
+  // Call setCursor on page load
+  setCursor();
+
+  // Call setCursor whenever dark mode toggle is clicked
+  const modeToggle = document.getElementById('modeToggle');
+  if (modeToggle) {
+      modeToggle.addEventListener('click', function () {
+          body.classList.toggle('dark-mode');
+          localStorage.setItem('userMode', body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode');
+          setCursor();
+      });
+  }
+});
+
+
+</script>
+
 
 </body>
 
