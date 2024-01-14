@@ -549,20 +549,40 @@ body.dark-theme #contactForm button:hover {
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <script>
     const toggle = document.getElementById('darkModeToggle');
-  
+
+    if (localStorage.getItem("theme") === null) {
+      localStorage.setItem("theme", "light");
+    }
+
+    let localData = localStorage.getItem("theme");
+
+    if (localData == "light") {
+      document.body.classList.remove('dark-theme');
+      toggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else if (localData == "dark") {
+      document.body.classList.add('dark-theme');
+      toggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-theme');
-  
+
       if (document.body.classList.contains('dark-theme')) {
-        toggle.innerHTML = '<i class="fas fa-sun"></i>'; // Replace with your sun icon
+        toggle.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem("theme", "dark");
       } else {
-        toggle.innerHTML = '<i class="fas fa-moon"></i>'; // Replace with your moon icon
+        toggle.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem("theme", "light");
       }
     });
   </script>
-    <script>
+  </script>
+  
+  <script>
     // Smooth scroll to the contact section when clicking the "Hire Me" button
     document.getElementById('hire-me').addEventListener('click', function () {
         document.querySelector('#contact').scrollIntoView({
@@ -570,6 +590,7 @@ body.dark-theme #contactForm button:hover {
         });
     });
 </script>
+
   
     
    <!--<script src="assets/vendor/php-email-form/validate.js"></script> -->
