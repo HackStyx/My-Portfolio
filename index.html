@@ -157,6 +157,30 @@ body.dark-theme #contactForm button:hover {
   }
 }
 
+.hire-me {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #536dfe, #7e57c2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background 2s ease, border-radius 0.3s ease, color 0.5s ease, background-image 0.5s ease;
+    --gradient-color-1: #536dfe; /* Initial gradient color */
+    --gradient-color-2: #7e57c2; /* Initial gradient color */
+    cursor: pointer;
+}
+
+.hire-me:hover {
+    background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    transform: scale(1.1);
+    border-radius: 10px;
+    color: #000;
+    --gradient-color-1: #A1FFCE; /* New gradient color 1 on hover */
+    --gradient-color-2: #00ff95; /* New gradient color 2 on hover */
+}
 
 
       </style>
@@ -214,7 +238,7 @@ body.dark-theme #contactForm button:hover {
     <a href="https://discord.com/users/1014847160329699348" class="discord" target="_blank"><i class="bx bxl-discord"></i></a>
     <a href="https://instagram.com/heyy_im.prince" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
 </div>
-
+<a href="#contact" class="hire-me">Hire Me</a>
     </div>
   </section><!-- End Hero -->
 
@@ -538,6 +562,14 @@ body.dark-theme #contactForm button:hover {
       }
     });
   </script>
+    <script>
+    // Smooth scroll to the contact section when clicking the "Hire Me" button
+    document.getElementById('hire-me').addEventListener('click', function () {
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>
   
     
    <!--<script src="assets/vendor/php-email-form/validate.js"></script> -->
